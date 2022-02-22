@@ -1,4 +1,5 @@
 import { Link, Outlet } from "react-router-dom";
+import { AuthStatus } from "../components/AuthStatus";
 
 const Layout = () => {
   return (
@@ -11,6 +12,8 @@ const Layout = () => {
           <Link to="/protected">Protected page</Link>
         </li>
       </ul>
+
+      <AuthStatus />
 
       <Outlet />
     </div>
